@@ -1,0 +1,60 @@
+#body-site{
+	background: rgba(155,153,153, 0.7);
+}
+
+#login-box{
+	width: 300px;
+	height: 250px;
+	position: relative;
+	margin: 0px auto;
+	background: #202020;
+	top: 20%;
+	border-radius: 5px;
+	overflow:hidden;
+}
+
+#form-login{
+	height: auto;
+	#form-placement{
+		border-radius: 7px;
+		background: #141414;
+		top: 25%;
+		left: 3%;
+		position: absolute;
+		padding: 5px;
+		margin: 0px;
+		width: 90%;
+	}
+	div{
+		margin-bottom:5px;
+		width:100%;
+		position:relative;
+		label,input[type='text'],input[type='password']{
+			color: #9D9D9D;
+			background-color: #141414;
+			border: none;
+			height: 35px;
+			width: 90%;
+		}
+		input[type='text'],input[type='password']{
+			padding: 5px;
+		}
+	}
+	.btn-submit{
+		width: 80%;
+		left: 6.7%;
+		bottom: 5%;
+	}
+}
+
+#user-options{
+	position: absolute;
+	bottom: 28%;
+	font-size: 13px;
+	color: #9D9D9D;
+	left: 10.5%;
+	li{
+		display: inline;
+		margin-right: 5px;
+	}
+}

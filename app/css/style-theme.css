@@ -1,0 +1,77 @@
+body {
+  background: url(imgs/site-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  overflow-x: none;
+  font-family: helvetica;
+}
+
+body, p, ul, li {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+#body-site {
+  background: #fff;
+  height: 100%;
+  width: 900px;
+  position: relative;
+  margin: 0px auto;
+  clear: both;
+  margin-top: 0px !important;
+}
+
+.box-title {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #111111;
+}
+.box-title span {
+  color: #9D9D9D;
+  text-align: left;
+  padding: 20px;
+  margin: 0px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #ffa500;
+}
+
+.btn-submit:hover {
+  background-color: #ffae19;
+}
+
+/* -- footer -- */
+#footer-site {
+  width: 90%;
+  position: absolute;
+  bottom: 0%;
+  border-top: solid #111 2px;
+  left: 5%;
+  background: transparent;
+  padding: 10px;
+  text-align: center;
+}
+#footer-site li {
+  display: inline;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=style-theme.css.map */
