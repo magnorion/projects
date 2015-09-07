@@ -16,13 +16,13 @@ a {
 }
 
 #body-site {
-  background: #fff;
   height: 100%;
-  width: 900px;
+  width: 1000px;
   position: relative;
   margin: 0px auto;
   clear: both;
   margin-top: 0px !important;
+  overflow: hidden;
 }
 
 .box-title {
@@ -40,6 +40,17 @@ a {
   margin: 0px;
 }
 
+/* Css THEME */
+.theme-color {
+  color: #9D9D9D;
+  background: #111 none repeat scroll 0% 0%;
+}
+
+.inside-color {
+  background: #202020 none repeat scroll 0% 0%;
+}
+
+/* end */
 .btn {
   border: none;
   cursor: pointer;
@@ -58,6 +69,14 @@ a {
   background-color: #ffae19;
 }
 
+/* Menu theme */
+.top-menu {
+  position: fixed;
+  top: 0%;
+  z-index: 999 !important;
+}
+
+/* end */
 /* -- footer -- */
 #footer-site {
   width: 90%;

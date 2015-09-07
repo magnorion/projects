@@ -1,5 +1,9 @@
+body {
+  cursor: default;
+}
+
 #body-site {
-  background: rgba(155, 153, 153, 0.7);
+  background: transparent;
 }
 
 #login-box {
