@@ -62,3 +62,10 @@ body{
 		margin-right: 5px;
 	}
 }
+
+.un-hover{
+	color: #9D9D9D !important;
+	&:hover{
+		color: #9D9D9D !important;
+	}
+}

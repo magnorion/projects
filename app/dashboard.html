@@ -7,10 +7,10 @@
 		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" /> <!-- Font awesome -->
 	</head>
 	<body>
-		<!-- menu principal -->
+		<!-- Menu principal -->
 		<div id="menu-bar" class="top-menu theme-color">
 			<ul class="left-menu">
-				<li><a href="#"> <i class="fa fa-user"></i> Usuário</a></li><li> | </li>
+				<li><a href="#"> <i class="fa fa-user"></i> Usuário</a></li>
 				<li><a href="#"> <i class="fa fa-circle"></i> Dashboard</a></li>
 			</ul>
 			<span id="user-title"> User </span>			
@@ -18,7 +18,7 @@
 				<li><a href="index.html"><i class="fa fa-sign-out"></i> Log Out</a></li>
 			</ul>
 		</div>
-		<!-- end -->
+		<!-- Menu principal end -->
 		<div id="body-site">
 			<div id="container">
 				<!-- Dados do usuário -->
@@ -35,12 +35,20 @@
 						</ul>
 					</div>
 				</div>
-				<!-- end -->
+				<!-- Dados do usuário end -->
 				<div id="data-panel">
+					<!-- busca -->
+					<div id="search-placement">
+						<div id="search-input" class="theme-color">
+							<input type="text" class="inside-color" placeholder="Buscar bogus" name="search-site" />
+							<button> <i class="fa fa-search"></i> </button>
+						</div>
+					</div>
+					<!-- end -->
 					<!-- Bogus select -->
 					<div class="container-data theme-color">
 						<div class="box-title">
-							<span> <i class="fa fa-square"></i> Meus Personagens </span>
+							<span> <i class="fa fa-users"></i> Meus Personagens </span>
 						</div>
 						<div class="container inside-color">
 							<div id="cards-placement">
@@ -59,11 +67,11 @@
 							</div>
 						</div>
 					</div>
-					<!-- end -->
+					<!-- Bogus select end -->
 					<!-- Feeding -->
 					<div class="container-data after-box">
 						<div class="box-title">
-							<span> <i class="fa fa-square"></i> Notificações </span>
+							<span> <i class="fa fa-exclamation"></i> Notificações </span>
 						</div>
 						<div class="container inside-color">
 							<ul class="notifications">
@@ -74,9 +82,34 @@
 							</ul>
 						</div>
 					</div>
-					<!-- end -->
+					<!-- Feeding end -->
+					<!-- Todas as batalhas -->
+					<div id="battle-box" class="container-data after-box">
+						<div class="box-title">
+							<span> <i class="fa fa-shield"></i> Minhas batalhas </span>
+						</div>
+						<div class="container inside-color">
+							<ul class="notifications">
+								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 1 <span class="info-status"> Ir para o local </span></li>
+								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 2 <span class="info-status"> Ir para o local </span></li>
+								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 3 <span class="info-status"> Ir para o local </span></li>
+								<li> &nbsp; <span class="info-status"> <i class="fa fa-dot-circle-o"></i> Ver todas as batalhas </span></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Batalhas end -->
 				</div>
 			</div>
+			<!-- Footer site -->
+			<div id="footer-site" class="theme-color">
+				<ul id="list-links" class="inside-color">
+					<li>Link 1</li>
+					<li>Link 2</li>
+					<li>Link 3</li>
+				</ul>
+				<p id="logo-footer"> Coliseum Fake <span></span> </p>
+			</div>
+			<!-- footer end -->
 		</div>
 		<!-- scripts -->
 		<script src="assets/jquery/dist/jquery.min.js"></script> <!-- jQuery Core -->

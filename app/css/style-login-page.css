@@ -63,4 +63,11 @@ body {
   margin-right: 5px;
 }
 
+.un-hover {
+  color: #9D9D9D !important;
+}
+.un-hover:hover {
+  color: #9D9D9D !important;
+}
+
 /*# sourceMappingURL=style-login-page.css.map */
