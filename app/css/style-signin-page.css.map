@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ,CACP,KAAK,CAAE,gBAAgB,CACvB,MAAM,CAAE,gBAAgB,CAGzB,eAAe,CACd,GAAG,CAAE,cAAc,CACnB,KAAK,CAAE,GAAG,CACV,IAAI,CAAE,GAAG,CAGV,aAAc,CACV,MAAM,CAAE,GAAG,CACX,IAAI,CAAE,IAAI",
+"sources": ["../sass/style-signin-page.scss"],
+"names": [],
+"file": "style-signin-page.css"
+}

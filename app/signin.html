@@ -5,26 +5,39 @@
 		<link rel="stylesheet" href="css/style-theme.css" /> <!-- Style Theme -->
 		<link rel="stylesheet" href="css/style-login-page.css" /> <!-- Style ForgotPass-page -->
 		<link rel="stylesheet" href="css/style-forgotLogin-page.css" /> <!-- Style ForgotPass-page -->
+		<link rel="stylesheet" href="css/style-signin-page.css" /> <!-- Style ForgotPass-page -->
 		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" /> <!-- Style Theme -->
 	</head>
 	<body>
 		<div id="body-site">
-			<div id="login-box" class="forgot-pass-box">
+			<div id="login-box" class="cad-box">
 				<div class="box-title login-title">
-					<span> <i class="fa fa-sign-in"></i> Esqueci minha senha </span>
+					<span> <i class="fa fa-sign-in"></i> Cadastro </span>
 				</div>
 				<div id="form-login">
 					<form id="login-user">
 						<div id="form-placement">
 							<div>
+								<label><i class="fa fa-user"></i></label>
+								<input type="text" placeholder="Nome completo" name="user-login-name" />
+							</div>								
+							<div>
 								<label><i class="fa fa-at"></i></label>
-								<input type="text" placeholder="Meu email" name="user-login-name" />
+								<input type="text" placeholder="Email" name="user-login-name" />
+							</div>								
+							<div>
+								<label><i class="fa fa-key"></i></label>
+								<input type="password" placeholder="Senha" name="user-login-name" />
+							</div>	
+							<div>
+								<label><i class="fa fa-check"></i></label>
+								<input type="password" placeholder="Confirmar Senha" name="user-login-name" />
 							</div>						
 						</div>
 						<ul id="user-options">
 							<li> <a href="index.html">Login</a> </li>
 							<li>|</li>
-							<li> <a href="signin.html">Não tenho cadastro</a> </li>
+							<li> <a href="forgot-pass.html">Esqueci minha senha</a> </li>
 						</ul>
 						<buttom class="btn btn-submit"> Enviar </buttom>
 					</form>

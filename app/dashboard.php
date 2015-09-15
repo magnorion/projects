@@ -1,40 +1,17 @@
 <html>
 	<head>
-		<title> Coliseum </title>
+		<?php require_once("includes/_title-page.php"); ?>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="css/style-theme.css" /> <!-- Style Theme -->
-		<link rel="stylesheet" href="css/style-dashboard-page.css" /> <!-- Style dashboard -->
-		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" /> <!-- Font awesome -->
+		<?php require_once("includes/_style-page.html"); ?>
 	</head>
 	<body>
 		<!-- Menu principal -->
-		<div id="menu-bar" class="top-menu theme-color">
-			<ul class="left-menu">
-				<li><a href="#"> <i class="fa fa-user"></i> Usuário</a></li>
-				<li><a href="#"> <i class="fa fa-circle"></i> Dashboard</a></li>
-			</ul>
-			<span id="user-title"> User </span>			
-			<ul class="right-menu">
-				<li><a href="index.html"><i class="fa fa-sign-out"></i> Log Out</a></li>
-			</ul>
-		</div>
+		<?php require_once("includes/_top-menu.html"); ?>
 		<!-- Menu principal end -->
 		<div id="body-site">
 			<div id="container">
 				<!-- Dados do usuário -->
-				<div id="user-details" class="theme-color">
-					<div id="user-avatar">
-						<img src="css/imgs/avatar.png" />
-					</div>
-					<div id="user-options">
-						<ul>
-							<li><i class="fa fa-users"></i> Meus personagens</li>
-							<li><i class="fa fa-trophy"></i> Minhas Batalhas</li>
-							<li><i class="fa fa-file-o"></i> Minhas Informações</li>
-							<li><i class="fa fa-search"></i> Procurar por...</li>
-						</ul>
-					</div>
-				</div>
+				<?php require_once("includes/_user-datails.html"); ?>
 				<!-- Dados do usuário end -->
 				<div id="data-panel">
 					<!-- busca -->
@@ -52,7 +29,7 @@
 						</div>
 						<div class="container inside-color">
 							<div id="cards-placement">
-								<div class="card" id="new-bogus">
+								<div class="card config-slot" id="new-bogus">
 									<i class="fa fa-user-plus"></i>
 								</div>
 								<div class="card bogus-select">
@@ -61,8 +38,8 @@
 								<div class="card bogus-select">
 									<img src="css/imgs/avatar.png" />
 								</div>
-								<div class="card bogus-select">
-									<img src="css/imgs/avatar.png" />
+								<div class="card config-slot" id="new-slot">
+									<i class="fa fa-plus-square-o"></i>
 								</div>
 							</div>
 						</div>
@@ -86,7 +63,7 @@
 					<!-- Todas as batalhas -->
 					<div id="battle-box" class="container-data after-box">
 						<div class="box-title">
-							<span> <i class="fa fa-shield"></i> Minhas batalhas </span>
+							<span> <i class="fa fa-trophy"></i> Minhas batalhas </span>
 						</div>
 						<div class="container inside-color">
 							<ul class="notifications">
@@ -101,18 +78,10 @@
 				</div>
 			</div>
 			<!-- Footer site -->
-			<div id="footer-site" class="theme-color">
-				<ul id="list-links" class="inside-color">
-					<li>Link 1</li>
-					<li>Link 2</li>
-					<li>Link 3</li>
-				</ul>
-				<p id="logo-footer"> Coliseum Fake <span></span> </p>
-			</div>
+			<?php require_once("includes/_footer.html");?>
 			<!-- footer end -->
 		</div>
 		<!-- scripts -->
-		<script src="assets/jquery/dist/jquery.min.js"></script> <!-- jQuery Core -->
-		<script src="js/script-site.min.js"></script> <!-- scripts do site -->
+		<?php require_once("includes/_scripts-page.html");?>
 	</body>
 </html>

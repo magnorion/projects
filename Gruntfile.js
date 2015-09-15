@@ -3,13 +3,15 @@ module.exports = function(grunt){
 		sass:{
 			dist:{
 				options:{
-					style: 'expanded'
+					style: 'compressed'
 				},
 				files:{
 					'app/css/style-theme.css':'app/sass/style-theme.scss',
 					'app/css/style-login-page.css':'app/sass/style-login-page.scss',
 					'app/css/style-forgotLogin-page.css':'app/sass/style-forgotLogin-page.scss',
-					'app/css/style-dashboard-page.css':'app/sass/style-dashboard-page.scss'
+					'app/css/style-dashboard-page.css':'app/sass/style-dashboard-page.scss',
+					'app/css/style-signin-page.css':'app/sass/style-signin-page.scss',
+					'app/css/style-userProfile-page.css':'app/sass/style-userProfile-page.scss'
 				}
 			}
 		},
@@ -23,30 +25,26 @@ module.exports = function(grunt){
 		watch:{
 			js:{
 				files:['app/js/script-site.js'],
-				livereload:true,
-				tasks:['uglify']
+				tasks:['uglify'],
+				options:{
+					livereload:460
+				},
 			},
 			sass:{
 				files:['app/sass/*.scss'],
-				tasks:['sass']
-			}
-		},
-		browserSync:{
-			dev:{
-				bsFiles:{
-					src:[
-						'app/css/*.css',
-						'app/js/script.js',
-						'app/*.html'
-					]
-				},
+				tasks:['sass'],
 				options:{
-					watchTask: true,
-					server:{
-						baseDir:"./app",
-						index:"index.html"
-					}
+					livereload:460
+				},
+			},
+			php:{
+				files:['app/*.html','app/*.php','app/includes/*.html','app/includes/*.php'],
+				options:{
+					livereload: 460,
 				}
+			},
+			cwd:{
+				files:['app/']
 			}
 		},
 		copy:{
@@ -67,8 +65,8 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default', ['browserSync', 'watch']);
+	grunt.registerTask('default', ['watch']);
 	grunt.registerTask('gerarApp', ['clean', 'copy']);
 }

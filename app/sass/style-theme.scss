@@ -1,4 +1,4 @@
-$bg_site: url(imgs/site-bg.jpg) no-repeat;
+$bg_site: url(imgs/bg-2.jpg) no-repeat;
 body{
 	background:$bg_site;
 	background-size: 100% 100%;
@@ -74,7 +74,7 @@ a{
 .top-menu{
 	position: fixed;
 	top: 0%;
-	z-index: 999 !important;
+	z-index: 99999 !important;
 }
 /* end */
 
