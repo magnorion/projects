@@ -32,24 +32,23 @@ a{
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background: #111111;
+	background: #FFA500;
 	border-radius: 5px 5px 0px 0px;
 	span{
-		color: #9D9D9D;
+		color: #fff;
 		text-align: left;
 		padding: 20px;
 		margin: 0px;
-		color: #ffa500;
 	}
 }
 
 /* Css THEME */
 .theme-color{
-	color: #9D9D9D;
-	background: #111 none repeat scroll 0% 0%;
+	color: #FFA500;
+	background: #fff none repeat scroll 0% 0%;
 }
 .inside-color{
-	background: #202020 none repeat scroll 0% 0%;
+	background: #fff none repeat scroll 0% 0%;
 }
 /* end */
 
@@ -92,6 +91,7 @@ a{
 		padding: 20px;
 		position: relative;
 		border-radius: 5px;
+		background-color: #E6E6E6 !important;
 		li{
 			padding: 10px;
 			list-style: none;
