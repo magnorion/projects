@@ -1,8 +1,6 @@
-$bg_site: url(imgs/site-bg.jpg) no-repeat;
+$bg_site: #bfbfbf;
 body{
 	background: $bg_site;
-	background-size: 100% 100%;
-	background-position: fixed;
 	overflow-x:none;
 	font-family: helvetica;
 }
