@@ -14,7 +14,7 @@ body{
 	width: 100%;
 	height: 25px;
 	padding: 5px;
-	box-shadow: 0px 0px 6px 4px #000;
+	box-shadow: 0px 0px 5px 1px #000;
 	color: #8c8c8c !important;
 	ul.left-menu{
 		margin-top: 3px;
@@ -98,13 +98,21 @@ body{
 	overflow-x: hidden;
 }
 
-#user-details{
+.user-container-position{
+	width: 300px;
+	height: auto;
+	overflow: auto;
+	float: left;
+}
+
+.user-details{
 	width: 250px;
 	height: auto;
 	float: left;
 	height: auto;
 	border-radius: 5px;
 	padding: 5px;
+	background: #fff;
 	#user-avatar{
 		width: 100%;
 		height: 250px;
@@ -118,12 +126,16 @@ body{
 		ul{
 			padding: 10px;
 			li{
+				color: #8C8C8C;
 				cursor: default;
 				border-bottom: solid transparent 1px;
 				background: #E6E6E6;
 				list-style: none;
 				padding: 5px;
 				margin-bottom: 2px;
+				&:hover{
+					color: #FFA500;
+				}
 			}
 		}
 	}
@@ -224,5 +236,53 @@ body{
 	&:hover{
 		color: #000;
 		background: #d9d9d9;
+	}
+}
+
+#players-show{
+	@extend .user-details;
+	margin-top: 20px;
+	margin-left: 19px;
+	position: relative !important;
+	height: 250px;
+	.box-title{
+		left: 0%;
+	}
+	.container{
+		width: 90%;
+		height: 90%;
+		position: relative;
+		overflow: auto;
+		margin-left: 5%;
+		.player-position{
+			width: 100%;
+			height:80%;
+			bottom: 0%;
+			position: absolute;
+		    .player{
+				width: 70px;
+				height: 80px;
+				position: relative;
+				float: left;
+				margin-right: 1px;
+				margin-top: 5px;
+				margin-left: 3.5px;
+		    	img{
+		    		width: 100% !important;
+		    		height: 90% !important;
+		    		position: absolute;
+		    		left: 0%;
+		    		top: 0%;
+		    	}
+		    	span{
+		    		color: #8C8C8C;
+		    		position: absolute;
+		    		bottom: 2%;
+		    	}
+		    }	
+		}
+	}
+	span{
+		padding-left: 17px;
 	}
 }

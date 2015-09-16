@@ -1,0 +1,16 @@
+@import "style-dashboard-page.scss";
+
+#slide-box-placement{
+	position: relative;
+	span{
+		z-index: 999 !important;
+		position: absolute;
+		width: auto;
+		bottom: 0%;
+		background: rgba(0,0,0, 0.7) none repeat scroll 0% 0%;
+		color: #FFF;
+		right: 0%;
+		padding: 10;
+		border-radius: 5px 0px 0px 0px;
+	}
+}

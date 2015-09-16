@@ -3,6 +3,9 @@
 		<?php require_once("includes/_title-page.php"); ?>
 		<meta charset="utf-8" />
 		<?php require_once("includes/_style-page.html"); ?>
+		<style>
+			.user-friends{ margin-left: 0px !important; }
+		</style>
 	</head>
 	<body>
 		<!-- Menu principal -->
@@ -67,9 +70,9 @@
 						</div>
 						<div class="container inside-color">
 							<ul class="notifications">
-								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 1 <span class="info-status"> Ir para o local </span></li>
-								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 2 <span class="info-status"> Ir para o local </span></li>
-								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 3 <span class="info-status"> Ir para o local </span></li>
+								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 1 <span class="info-status"> <a href="stage.php">Ir para o local</a> </span></li>
+								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 2 <span class="info-status"> <a href="stage.php">Ir para o local</a> </span></li>
+								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 3 <span class="info-status"> <a href="stage.php">Ir para o local</a> </span></li>
 								<li> &nbsp; <span class="info-status"> <i class="fa fa-dot-circle-o"></i> Ver todas as batalhas </span></li>
 							</ul>
 						</div>

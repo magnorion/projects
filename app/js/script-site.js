@@ -20,4 +20,11 @@
 	if(login_input.length > 0)
 		login_input.focus();
 	// end ---
+
+	//Search 
+	$("#search-input button").on("click",function(){
+		var url = 'search-page.php';
+		window.location.assign(url);
+	});
+	// end ---
 })(jQuery)

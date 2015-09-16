@@ -11,7 +11,9 @@ module.exports = function(grunt){
 					'app/css/style-forgotLogin-page.css':'app/sass/style-forgotLogin-page.scss',
 					'app/css/style-dashboard-page.css':'app/sass/style-dashboard-page.scss',
 					'app/css/style-signin-page.css':'app/sass/style-signin-page.scss',
-					'app/css/style-userProfile-page.css':'app/sass/style-userProfile-page.scss'
+					'app/css/style-userProfile-page.css':'app/sass/style-userProfile-page.scss',
+					'app/css/style-search-page.css':'app/sass/style-search-page.scss',
+					'app/css/style-stage-page.css':'app/sass/style-stage-page.scss'
 				}
 			}
 		},

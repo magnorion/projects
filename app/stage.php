@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<?php require_once("includes/_style-page.html"); ?>
 		<link rel="stylesheet" href="css/style-userProfile-page.css" /> <!-- Style profile -->
+		<link rel="stylesheet" href="css/style-stage-page.css" /> <!-- Style profile -->
 	</head>
 	<body>
 		<!-- Menu principal -->
@@ -13,11 +14,12 @@
 			<div id="slide-box-placement" class="container inside-color">
 				<div id="slide-bogus">
 					<img src="css/imgs/background-slide.jpg" />
+					<span> Cenário Título | Players: 0 </span>
 				</div>
 			</div>
 			<div id="container">
 				<!-- Dados do usuário -->
-				<?php require_once("includes/_user-datails.html"); ?>
+				<?php require_once("includes/_stage-menu.php"); ?>
 				<!-- Dados do usuário end -->
 				<div id="data-panel">
 					<!-- Sobre -->
@@ -33,14 +35,14 @@
 					<!-- Todas as batalhas -->
 					<div id="battle-box" class="container-data after-box">
 						<div class="box-title">
-							<span> <i class="fa fa-trophy"></i> Minhas batalhas </span>
+							<span> <i class="fa fa-globe"></i> Eventos </span>
 						</div>
 						<div class="container inside-color">
 							<ul class="notifications">
-								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 1 <span class="info-status"> <a href="stage.php">Ir para o local</a> </span></li>
-								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 2 <span class="info-status"> <a href="stage.php">Ir para o local</a> </span></li>
-								<li class="battle-info"><i class="fa fa-dot-circle-o"></i> Field 3 <span class="info-status"> <a href="stage.php">Ir para o local</a> </span></li>
-								<li> &nbsp; <span class="info-status"> <i class="fa fa-dot-circle-o"></i> Ver todas as batalhas </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 1 <span class="info-status"> Ver </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 2 <span class="info-status"> Ver </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 3 <span class="info-status"> Ver </span></li>
+								<li> &nbsp; <span class="info-status"> <i class="fa fa-dot-circle-o"></i> Ver todas os eventos </span></li>
 							</ul>
 						</div>
 					</div>

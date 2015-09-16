@@ -1,19 +1,15 @@
 <div class="user-container-position">
-	<div class="user-details" class="theme-color">
-		<div id="user-avatar">
-			<img src="css/imgs/avatar.png" />
-		</div>
+	<div class="user-details theme-color">
 		<div id="user-options">
 			<ul>
-				<li><i class="fa fa-user"></i> <a href="user-profile.php">Profile</a></li>
-				<li><i class="fa fa-users"></i> <a href="#">Meus personagens</a></li>
-				<li><i class="fa fa-trophy"></i> <a href="#">Minhas Batalhas</a></li>
-				<li><i class="fa fa-file-o"></i> <a href="#">Minhas Informações</a></li>
-				<li><i class="fa fa-search"></i> <a href="search-page.php">Procurar por...</a></li>
+				<li><i class="fa fa-plus"></i> <a href="user-profile.php">Adicionar cenário</a></li>
+				<li><i class="fa fa-users"></i> <a href="#">Ver players</a></li>
+				<li><i class="fa fa-pencil-square"></i> <a href="#">Alterar dados do cenário</a></li>
+				<li><i class="fa fa-trash"></i> <a href="#">Remover Cenário</a></li>
 			</ul>
 		</div>
 	</div>
-	<div id="players-show" class="theme-color user-friends">
+	<div id="players-show" class="theme-color">
 		<div class="box-title">
 			<span> <i class="fa fa-users"></i> Players </span>
 		</div>
