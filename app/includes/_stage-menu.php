@@ -4,6 +4,7 @@
 			<ul>
 				<li><i class="fa fa-plus"></i> <a href="user-profile.php">Adicionar cenário</a></li>
 				<li><i class="fa fa-users"></i> <a href="#">Ver players</a></li>
+				<li><i class="fa fa-globe"></i> <a href="#">Ver eventos</a></li>
 				<li><i class="fa fa-pencil-square"></i> <a href="#">Alterar dados do cenário</a></li>
 				<li><i class="fa fa-trash"></i> <a href="#">Remover Cenário</a></li>
 			</ul>

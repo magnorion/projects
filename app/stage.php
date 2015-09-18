@@ -11,12 +11,7 @@
 		<?php require_once("includes/_top-menu.html"); ?>
 		<!-- Menu principal end -->
 		<div id="body-site">
-			<div id="slide-box-placement" class="container inside-color">
-				<div id="slide-bogus">
-					<img src="css/imgs/background-slide.jpg" />
-					<span> Cenário Título | Players: 0 </span>
-				</div>
-			</div>
+			<?php require_once("includes/_stage-top.php"); ?>
 			<div id="container">
 				<!-- Dados do usuário -->
 				<?php require_once("includes/_stage-menu.php"); ?>
@@ -39,9 +34,9 @@
 						</div>
 						<div class="container inside-color">
 							<ul class="notifications">
-								<li class="battle-info"><i class="fa fa-globe"></i> Evento 1 <span class="info-status"> Ver </span></li>
-								<li class="battle-info"><i class="fa fa-globe"></i> Evento 2 <span class="info-status"> Ver </span></li>
-								<li class="battle-info"><i class="fa fa-globe"></i> Evento 3 <span class="info-status"> Ver </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 1 <span class="info-status"> <a href="stage-event.php">Ver</a> </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 2 <span class="info-status"> <a href="stage-event.php">Ver</a> </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 3 <span class="info-status"> <a href="stage-event.php">Ver</a> </span></li>
 								<li> &nbsp; <span class="info-status"> <i class="fa fa-dot-circle-o"></i> Ver todas os eventos </span></li>
 							</ul>
 						</div>

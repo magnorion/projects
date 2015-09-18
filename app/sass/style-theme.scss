@@ -17,7 +17,7 @@ a{
 }
 
 #body-site{
-	height: 980px;
+	height: 1010px;
 	width: 1000px;
 	position: relative;
 	margin: 0px auto;
@@ -96,7 +96,13 @@ a{
 		background-color: #E6E6E6 !important;
 		li{
 			padding: 10px;
-			list-style: none;
+			list-style: outside none none;
+			border-bottom: 1px solid #FFF;
+			cursor: default;
+			&:hover{
+				background: rgba(0,0,0, 0.2);
+				color: #fff;
+			}
 		}
 	}
 	#logo-footer{

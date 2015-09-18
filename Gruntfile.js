@@ -13,7 +13,8 @@ module.exports = function(grunt){
 					'app/css/style-signin-page.css':'app/sass/style-signin-page.scss',
 					'app/css/style-userProfile-page.css':'app/sass/style-userProfile-page.scss',
 					'app/css/style-search-page.css':'app/sass/style-search-page.scss',
-					'app/css/style-stage-page.css':'app/sass/style-stage-page.scss'
+					'app/css/style-stage-page.css':'app/sass/style-stage-page.scss',
+					'app/css/style-stageEvent-page.css':'app/sass/style-stageEvent-page.scss'
 				}
 			}
 		},

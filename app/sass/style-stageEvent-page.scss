@@ -1,0 +1,131 @@
+@import "style-dashboard-page.scss";
+
+#body-site{
+	height: auto;
+	overflow-x: hidden;
+	padding-bottom: 0px !important;
+}
+
+#data-panel{
+	width: 100% !important;
+	right: 0%;
+	height: 100%;
+}
+
+.action-box{
+	top: 0px !important;
+	height: 384px;
+	color: #9D9D9D;
+	padding: 7px !important;
+	text-align: left;
+	width: 99% !important;
+	min-height: 350px;
+	position: relative !important;
+	height: auto;
+	margin-bottom: 20px;
+	border-radius: none !important;
+	.action-container{
+		width: 100%;
+		height: auto;
+		min-height: 370px;
+		max-height: 350px;
+		.left-user-data{
+			@extend .user-details;
+			width: 25%;
+			height: 100%;
+			position: absolute;
+			top: 0%;
+			padding: 0;
+			.action-user-data{
+				font-size: 14px;
+			}
+			ul{
+				margin-top: 15px;
+				li{
+					color: #8C8C8C;
+					cursor: default;
+					border-bottom: 1px solid transparent;
+					background: #E6E6E6 none repeat scroll 0% 0%;
+					list-style: outside none none;
+					padding: 5px;
+					margin-bottom: 2px;
+					width: 80%;
+				}
+			}
+			img{
+				width: 85% !important;
+				max-width: 181.933px;
+				max-height:181.933px;
+				margin: 7.5%;
+			}
+		}
+		span.action-text{
+			width: 70%;
+			right: 0%;
+			top: 0%;
+			position: absolute;
+			padding: 10px;
+		}
+	}
+}
+
+#container{
+	overflow: hidden;
+	position: relative !important;
+	margin-top: 0px !important;
+	height: auto !important;
+
+}
+
+#data-panel{
+	top: 25px !important;
+	height: auto !important;
+}
+
+#post-add{
+	width: 300px;
+	height: 35px;
+	float: right;
+	background: #FFA500;
+	color: #fff;
+	ul{
+		padding: 5px;
+		padding-left: 25px;
+		li{
+			display: inline;
+			color: #fff;
+			margin-right: 5px;
+		}
+	}
+}
+
+#search-pagination{
+	width: 100%;
+	height: 35px;
+	position: relative;
+	background: #FFA500;
+	margin-bottom: 25px;
+	top: -20px !important;
+	border-radius: 0px 0px 5px 5px;
+	ul{
+		padding: 5px;
+		padding-left: 25px;
+		li{
+			display: inline;
+			color: #fff;
+			margin-right: 5px;
+		}
+	}
+}
+
+#footer-site{
+	position: relative !important;
+	height: 187px !important;
+	#list-links{
+		position: absolute !important;
+	}
+	#logo-footer{
+		bottom: 19%;
+		left: 0%;
+	}
+}

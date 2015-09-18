@@ -11,7 +11,13 @@
 	if($("#slide-box-placement").length > 0){
 		var body_container = $("#body-site");
 		var get_size = Number($("#container").height()) + Number($("#slide-box-placement").height());
-		body_container.css({"height":get_size});
+		body_container.css({"height":"auto","min-height":get_size});
+	}
+	if($(".action-box").length > 0){
+		var counter_actions = Number($(".container-data").length);
+		var sum = 384 * counter_actions;
+		
+		var already_size = $("#body-site").height();		
 	}
 	// end ---
 
@@ -26,5 +32,11 @@
 		var url = 'search-page.php';
 		window.location.assign(url);
 	});
+	// end ---
+
+	//logo
+	var logo_footer = $("#logo-footer span");
+	var dateObj = new Date();
+	logo_footer.text(dateObj.getFullYear());
 	// end ---
 })(jQuery)
