@@ -115,3 +115,16 @@ a{
 	}
 }
 /* -- end -- */
+
+/* Modal theme */
+.reveal-modal .close-reveal-modal{
+	font-size: 40px !important;
+	color: #FFA500 !important; 
+}
+
+#modalTrigger{
+	z-index: -9999 !important;
+	opacity: 0;
+	position: absolute;
+}
+/* modal end */

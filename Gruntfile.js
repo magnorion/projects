@@ -26,25 +26,19 @@ module.exports = function(grunt){
 			}
 		},
 		watch:{
+			options:{
+				livereload: 8080,
+			},
 			js:{
 				files:['app/js/script-site.js'],
-				tasks:['uglify'],
-				options:{
-					livereload:460
-				},
+				tasks:['uglify']
 			},
 			sass:{
 				files:['app/sass/*.scss'],
-				tasks:['sass'],
-				options:{
-					livereload:460
-				},
+				tasks:['sass']
 			},
 			php:{
-				files:['app/*.html','app/*.php','app/includes/*.html','app/includes/*.php'],
-				options:{
-					livereload: 460,
-				}
+				files:['app/*.html','app/*.php','app/includes/*.html','app/includes/*.php']
 			},
 			cwd:{
 				files:['app/']

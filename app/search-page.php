@@ -20,15 +20,17 @@
 				<div id="data-panel">
 					<!-- busca -->
 					<div id="search-placement">
-						<div id="search-input" class="theme-color">
-							<input type="text" class="inside-color" placeholder="Buscar..." name="search-site" />
-							<div id="params-search">
-								<span><label> Bogus </label><input type="radio" name="search-type" value="bogus" /></span>
-								<span><label> Player </label><input type="radio" name="search-type" value="player" /></span>
-								<span><label> Cenário </label><input type="radio" name="search-type" value="comunidade" /></span>
+						<form name="search-site">
+							<div id="search-input" class="theme-color">
+								<input type="text" class="inside-color" placeholder="Buscar..." name="search-site" />
+								<div id="params-search">
+									<span><label> Bogus </label><input type="radio" checked name="search-type" value="bogus" /></span>
+									<span><label> Player </label><input type="radio" name="search-type" value="player" /></span>
+									<span><label> Cenário </label><input type="radio" name="search-type" value="comunidade" /></span>
+								</div>
+								<button> <i class="fa fa-search"></i> </button>
 							</div>
-							<button> <i class="fa fa-search"></i> </button>
-						</div>
+						</form>
 					</div>
 					<!-- end -->
 					<!-- Bogus select -->
