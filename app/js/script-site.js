@@ -30,8 +30,8 @@
 	if($(".action-box").length > 0){
 		var counter_actions = Number($(".container-data").length);
 		var sum = 384 * counter_actions;
-		
-		var already_size = $("#body-site").height();		
+
+		var already_size = $("#body-site").height();
 	}
 	// end ---
 
@@ -44,7 +44,7 @@
 	//##############################################################################
 
 	//################################## Login Page ################################
-	
+
 	// Login btn
 	$("#login-button").on("click",function(e){
 		e.preventDefault();
@@ -79,7 +79,7 @@
 
 	//#################################### Search Page #############################
 
-	//Search 
+	//Search
 	$("#search-input button").on("click",function(){
 		var url = 'search-page.php';
 		window.location.assign(url);
@@ -89,7 +89,7 @@
 	//##############################################################################
 
 	//##################################### New post Page ##########################
-	
+
 	// Post Limit
 	var counter = $("#chars-count span");
 	if(counter.length > 0){
@@ -114,7 +114,7 @@
 		"btn": $("#post-test"),
 		"text": $("textarea[name='post-input']")
 	};
-	
+
 	preview.btn.on("click",function(e){
 		e.preventDefault();
 	});
@@ -123,7 +123,7 @@
 	function preview_post(){
 		if(preview.text.val() == "")
 			return false;
-		
+
 		// check black list
 		var text_post_lower = preview.text.val().toLowerCase();
 		var black_list_tags = ['style','applet', 'body', 'bgsound', 'base', 'basefont', 'embed', 'frame', 'frameset', 'head', 'html', 'id', 'ilayer', 'layer', 'link', 'meta', 'name', 'object', 'script', 'title', 'xml', 'action', 'background', 'codebase', 'dynsrc', 'lowsrc','href'];
@@ -154,7 +154,7 @@
 			btn.bind("click",preview_post);
 		});
 	}
-	
+
 	btn.on("click",preview_post);
 
 	// #############################################################################

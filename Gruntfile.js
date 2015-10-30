@@ -14,7 +14,8 @@ module.exports = function(grunt){
 					'app/css/style-userProfile-page.css':'app/sass/style-userProfile-page.scss',
 					'app/css/style-search-page.css':'app/sass/style-search-page.scss',
 					'app/css/style-stage-page.css':'app/sass/style-stage-page.scss',
-					'app/css/style-stageEvent-page.css':'app/sass/style-stageEvent-page.scss'
+					'app/css/style-stageEvent-page.css':'app/sass/style-stageEvent-page.scss',
+					'app/css/style-myData-page.css':'app/sass/style-myData-page.scss'
 				}
 			}
 		},
@@ -30,15 +31,14 @@ module.exports = function(grunt){
 				livereload: 8080,
 			},
 			js:{
-				files:['app/js/script-site.js'],
-				tasks:['uglify']
+				files:['app/js/**/*.js'],
 			},
 			sass:{
 				files:['app/sass/*.scss'],
 				tasks:['sass']
 			},
 			php:{
-				files:['app/*.html','app/*.php','app/includes/*.html','app/includes/*.php']
+				files:['app/*.html','app/*.php','app/includes/*.html','app/includes/*.php','play/**/*.html']
 			},
 			cwd:{
 				files:['app/']

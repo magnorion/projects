@@ -1,0 +1,41 @@
+				<ng-include src="'../includes/_user-datails.html'"></ng-include>
+				<!-- Dados do usuário end -->
+				<div id="data-panel">
+					<!-- busca -->
+					<div id="search-placement">
+						<div id="search-input" class="theme-color">
+							<input type="text" class="inside-color" placeholder="Buscar bogus" name="search-site" />
+							<button> <i class="fa fa-search"></i> </button>
+						</div>
+					</div>
+					<!-- end -->
+					<!-- Bogus select -->
+					<div class="container-data theme-color">
+						<div class="box-title">
+							<span> <i class="fa fa-file"></i> Minhas Informações </span>
+						</div>
+						<div class="container inside-color">
+							<form name="data-user" id="data-user" method="post">
+								<div>
+									<label> Mudar senha </label>
+									<input type="password" name="password">
+								</div>
+								<div>
+									<label> Confirmar senha </label>
+									<input type="password" name="confir-password">
+								</div>
+								<div class="pic">
+									<label> Foto do perfil </label>
+									<input type="file" name="perfil-pic">
+								</div>
+								<div class="pic">
+									<label> Foto da capa </label>
+									<input type="file" name="cover-pic">
+								</div>
+								<div>
+									<button class="btn btn-submit"> Atualizar dados </button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>

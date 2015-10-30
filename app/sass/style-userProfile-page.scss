@@ -1,3 +1,15 @@
+#body-site{
+	height: 1350px;
+}
+
+.after-box{
+	margin-top: 220px !important;
+}
+
+.user-container-position{
+	margin-top: 180px !important;
+}
+
 .header-page-slider{
 	border-radius: 5px !important;
 	overflow: hidden !important;
@@ -27,9 +39,10 @@
 }
 
 #container{
-	top: 14.5%;
+	top: 0% !important;
 	left: 0%;
 	position: absolute !important;
+	overflow: hidden !important;
 }
 
 #data-panel{
@@ -37,3 +50,12 @@
 	right: 2%;
 	top: 5%;
 }
+
+/* bogus */
+#player-bogus{
+	margin-top: 50px;
+	#bogus-select-carousel{
+		width: 676px;
+	}
+}
+/* end */

@@ -1,0 +1,91 @@
+				<style> #players-show{margin-left: 0px !important;} </style>
+				<!-- Dados do usuário -->
+				<ng-include src="'../includes/_user-datails.html'"></ng-include>
+				<!-- Dados do usuário end -->
+				<div id="data-panel">
+					<!-- busca -->
+					<div id="search-placement">
+						<div id="search-input" class="theme-color">
+							<input type="text" class="inside-color" placeholder="Buscar bogus" name="search-site" />
+							<button> <i class="fa fa-search"></i> </button>
+						</div>
+					</div>
+					<!-- end -->
+					<!-- Bogus select -->
+					<div class="container-data theme-color">
+						<div class="box-title">
+							<span> <i class="fa fa-users"></i> Meus Personagens </span>
+							<span class="obs-cards"> <span>{{bogus_number}}/10</span> </span>
+						</div>
+						<div class="container inside-color">
+							<div carousel id="bogus-select-carousel" class="cards-placement">
+									<a modal data-reveal-id="newBogusModal">
+										<div class="card config-slot" id="new-bogus">
+											<i class="fa fa-user-plus"></i>
+										</div>
+									</a>
+									<div class="card bogus-select" title="bogus">
+										<img src="../css/imgs/avatar.png" />
+										<span> bogus </span>
+									</div>
+									<div class="card bogus-select" title="bogus">
+										<img src="../css/imgs/avatar.png" />
+										<span> bogus </span>
+									</div>
+									<div class="card config-slot" id="new-slot">
+										<i class="fa fa-plus"></i>
+									</div>
+							</div>
+						</div>
+					</div>
+					<!-- Bogus select end -->
+					<!-- cenário select -->
+					<div class="container-data theme-color after-box">
+						<div class="box-title">
+							<span> <i class="fa fa-globe"></i> Meus Cenários </span>
+						</div>
+						<div class="container inside-color">
+							<div carousel id="stage-select-carousel" class="cards-placement">
+								<a href="search-page.php" class="item">
+									<div class="card config-slot" id="find-cenary">
+										<i class="fa fa-search"></i>
+									</div>
+								</a>
+								<div class="card cenary-select item">
+									<a href="stage.php"><img src="../css/imgs/thumb-search.jpg" /></a>
+								</div>
+								<div class="card cenary-select item">
+									<a href="stage.php"><img src="../css/imgs/thumb-search.jpg" /></a>
+								</div>
+								<div class="card cenary-select item">
+									<a href="stage.php"><img src="../css/imgs/thumb-search.jpg" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Bogus select end -->
+					<!-- end -->
+				</div>
+			</div>
+			<!--- MODAL CONTROL -->
+			<div id="newBogusModal" class="reveal-modal">
+				<h1> Novo Bogus </h1>
+				<p> Cada jogador pode possuir até 10 bogus! </p>
+				<form>
+					<div>
+						<label> Nome </label>
+						<input type="text" name="bogusName" />
+					</div>
+					<div>
+						<label> Imagem </label>
+						<input type="file" name="bogusPic" />
+					</div>
+					<div>
+						<buttom class="btn btn-submit"> Criar </buttom>
+					</div>
+				</form>
+				<a class="close-reveal-modal">&#215;</a>
+			</div>
+			<!-- MODAL END -->
+		</div>
+		<!-- scripts -->
