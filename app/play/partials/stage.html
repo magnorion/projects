@@ -1,20 +1,6 @@
-<html>
-	<head>
-		<?php require_once("includes/_title-page.php"); ?>
-		<meta charset="utf-8" />
-		<?php require_once("includes/_style-page.html"); ?>
-		<link rel="stylesheet" href="css/style-userProfile-page.css" /> <!-- Style profile -->
-		<link rel="stylesheet" href="css/style-stage-page.css" /> <!-- Style profile -->
-	</head>
-	<body>
-		<!-- Menu principal -->
-		<?php require_once("includes/_top-menu.html"); ?>
-		<!-- Menu principal end -->
-		<div id="body-site">
-			<?php require_once("includes/_stage-top.php"); ?>
-			<div id="container">
-				<!-- Dados do usuário -->
-				<?php require_once("includes/_stage-menu.php"); ?>
+
+				<ng-include src="'../includes/_stage-top.php'"></ng-include>
+				<ng-include src="'../includes/_stage-menu.php'"> </ng-include>
 				<!-- Dados do usuário end -->
 				<div id="data-panel">
 					<!-- Sobre -->
@@ -34,21 +20,12 @@
 						</div>
 						<div class="container inside-color">
 							<ul class="notifications">
-								<li class="battle-info"><i class="fa fa-globe"></i> Evento 1 <span class="info-status"> <a href="stage-event.php">Ver</a> </span></li>
-								<li class="battle-info"><i class="fa fa-globe"></i> Evento 2 <span class="info-status"> <a href="stage-event.php">Ver</a> </span></li>
-								<li class="battle-info"><i class="fa fa-globe"></i> Evento 3 <span class="info-status"> <a href="stage-event.php">Ver</a> </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 1 <span class="info-status"> <a href="#/event">Ver</a> </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 2 <span class="info-status"> <a href="#/event">Ver</a> </span></li>
+								<li class="battle-info"><i class="fa fa-globe"></i> Evento 3 <span class="info-status"> <a href="#/event">Ver</a> </span></li>
 								<li> &nbsp; <span class="info-status"> <i class="fa fa-dot-circle-o"></i> Ver todas os eventos </span></li>
 							</ul>
 						</div>
 					</div>
 					<!-- Batalhas end -->
 				</div>
-			</div>
-			<!-- Footer site -->
-			<?php require_once("includes/_footer.html");?>
-			<!-- footer end -->
-		</div>
-		<!-- scripts -->
-		<?php require_once("includes/_scripts-page.html");?>
-	</body>
-</html>

@@ -18,22 +18,22 @@
 			<div class="player-position">
 				<!-- player -->
 				<div class="player">
-					<img src="css/imgs/avatar.png" title="player" />
+					<img src="../css/imgs/avatar.png" title="player" />
 				</div>
 				<div class="player">
-					<img src="css/imgs/avatar.png" title="player" />
+					<img src="../css/imgs/avatar.png" title="player" />
 				</div>
 				<div class="player">
-					<img src="css/imgs/avatar.png" title="player" />
+					<img src="../css/imgs/avatar.png" title="player" />
 				</div>
 				<div class="player">
-					<img src="css/imgs/avatar.png" title="player" />
+					<img src="../css/imgs/avatar.png" title="player" />
 				</div>
 				<div class="player">
-					<img src="css/imgs/avatar.png" title="player" />
+					<img src="../css/imgs/avatar.png" title="player" />
 				</div>
 				<div class="player">
-					<img src="css/imgs/avatar.png" title="player" />
+					<img src="../css/imgs/avatar.png" title="player" />
 				</div>
 				<!--end -->
 			</div>

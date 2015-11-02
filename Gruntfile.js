@@ -44,6 +44,14 @@ module.exports = function(grunt){
 				files:['app/']
 			}
 		},
+		connect:{
+			server:{
+				options:{
+					port:3000,
+					base:'app'
+				}
+			}
+		},
 		copy:{
 			main:{
 				expand:true,
@@ -61,9 +69,14 @@ module.exports = function(grunt){
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
 	grunt.registerTask('default', ['watch']);
+
+	grunt.registerTask('server', ['connect','watch']);
+
 	grunt.registerTask('gerarApp', ['clean', 'copy']);
 }

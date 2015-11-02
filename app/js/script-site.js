@@ -1,6 +1,6 @@
 (function($){
 	// ########################### Global config ###################################
-	
+
 	// Config site
 	var config = {
 		postLimit: 2200
