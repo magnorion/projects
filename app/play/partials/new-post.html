@@ -7,27 +7,26 @@
 							</div>
 						<div class="action-box container inside-color" id="new-post-action">
 							<form id='new-form'>
-								<textarea id="post-input" name='post-input'></textarea>
+								<textarea id="post-input" ng-model="post_action" name='post-input'></textarea>
 								<div id="preview-post"></div>
 								<button class="btn btn-submit"> END </button>
-								<p id="chars-count"> Faltam <span>{{counter}}</span> caracteres</p>
+								<p id="chars-count"> Faltam <span>{{2200 - post_action.length}}</span> caracteres</p>
 							</form>
 						</div>
 					</div>
 				</div>
-			</div>
 			<!--- MODAL CONTROL -->
 			<a href="" id="modalTrigger" data-reveal-id="banTags">&nbsp;</a>
 			<div id="banTags" class="reveal-modal">
 			     <h1> Atenção </h1>
 			     <p> Algumas tags foram <span>banidas</span> </p>
 			     <ul>
-			     	<li>style</li>
-					<li>body</li>
-					<li>html</li>
-					<li>iframe</li>
-					<li>script</li>
-					<li>action</li>
+					    <li>style</li>
+							<li>body</li>
+							<li>html</li>
+							<li>iframe</li>
+							<li>script</li>
+							<li>action</li>
 			     </ul>
 			     <a class="close-reveal-modal">&#215;</a>
 			</div>

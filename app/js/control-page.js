@@ -16,10 +16,9 @@ app.directive('carousel',function($http,$timeout){
 // Routes *****************************************************
 app.config(function($routeProvider){
   $routeProvider
-  .when('/',{ // Index
+  .when('/',{
     templateUrl:'partials/dashboard.html',
-    controller:'dashboardController',
-    css:'../css/style-dashboard-page.css'
+    controller:'dashboardController'
   })
 
   .when('/profile',{
@@ -89,26 +88,6 @@ app.controller('postController',function($scope,$routeParams,$rootScope){
   var config = {
     postLimit: 2200
   };
-
-  var counter = $("#chars-count");
-  var text = $("#post-input");
-  $scope.counter = 2200;
-  text.focus();
-  text.on("input",function(){
-    var chars = Number(text.val().length);
-    var chars_calc = Number(config.postLimit) - chars;
-    if(chars > Number(config.postLimit)){
-      var text_limit = text.val().substring(0,Number(config.postLimit));
-      text.val(text_limit);
-      counter.text(0);
-    }
-    $scope.counter = chars_calc;
-    $scope.$watch('counter',function(newValue,oldValue){
-      $scope.counter = chars_calc;
-    });
-    $scope.$digest();
-  });
-
   var preview = {
     "stage": $("#preview-post"),
     "btn": $("#post-test"),
