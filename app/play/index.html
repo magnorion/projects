@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="../assets/owl.carousel/dist/assets/owl.carousel.min.css" />
 	</head>
 	<body>
-    <div id="menu-bar" class="top-menu theme-color">
+    <div id="menu-bar" class="top-menu theme-color"  ng-controller="top-menu">
     	<div class="menu-center-position">
     		<ul class="left-menu">
     			<li><a href="#/"> <i class="fa fa-circle"></i> Início</a></li>
@@ -18,14 +18,14 @@
     		</ul>
     		<span id="user-title"> </span>
     		<ul class="right-menu">
-    			<li><a href="index.html"><i class="fa fa-sign-out"></i> Log Out</a></li>
+    			<li><a href="" ng-click="logout()"><i class="fa fa-sign-out"></i> Log Out</a></li>
     		</ul>
     	</div>
     </div>
     <!-- VIEW -->
     <div id="body-site">
       <div id="container">
-    	   <div ng-view autoscroll="true"></div>
+    	   <div ng-view class="fake-view" autoscroll="true"></div>
        </div>
        <div id="footer-site" class="theme-color">
        	<ul id="list-links" class="inside-color">

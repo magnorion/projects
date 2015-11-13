@@ -31,14 +31,20 @@ module.exports = function(grunt){
 				livereload: 8080,
 			},
 			js:{
-				files:['app/js/**/*.js'],
+				files:['app/js/**/*.js','app/js/*.js'],
+				reload:true
 			},
 			sass:{
 				files:['app/sass/*.scss'],
 				tasks:['sass']
 			},
-			php:{
-				files:['app/*.html','app/*.php','app/includes/*.html','app/includes/*.php','play/**/*.html']
+			css:{
+				files:['app/css/*.css'],
+				reload:true
+			},
+			html:{
+				files:['app/*.html','app/*.php','app/**/*.html'],
+				reload:true
 			},
 			cwd:{
 				files:['app/']

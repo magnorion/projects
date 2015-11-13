@@ -18,7 +18,8 @@ app.config(function($routeProvider){
   $routeProvider
   .when('/',{
     templateUrl:'partials/dashboard.html',
-    controller:'dashboardController'
+    controller:'dashboardController',
+    css:'../css/style-dashboard-page.css'
   })
 
   .when('/profile',{
@@ -60,6 +61,13 @@ app.config(function($routeProvider){
 // ************************************************************
 
 // ******************* Controllers *******************************
+app.controller('top-menu',function($scope){
+  $scope.logout = function(){
+    var url = "http://localhost/fake/app/#";
+    window.location.assign(url);
+  }
+});
+
 app.controller('dashboardController',function($scope,$routeParams){
   $scope.bogus_number = 2;
 });

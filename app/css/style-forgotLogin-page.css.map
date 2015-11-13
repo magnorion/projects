@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,gBAAgB,CACf,KAAK,CAAE,gBAAgB,CACvB,MAAM,CAAE,gBAAgB,CAGzB,uBAAuB,CACtB,KAAK,CAAE,cAAc,CACrB,MAAM,CAAE,cAAc,CACtB,IAAI,CAAE,cAAc,CAGrB,aAAc,CACV,MAAM,CAAE,GAAG,CACX,IAAI,CAAE,IAAI",
+"mappings": "AAAA,gBAAgB,CACf,KAAK,CAAE,gBAAgB,CACvB,MAAM,CAAE,gBAAgB,CAGzB,uBAAuB,CACtB,KAAK,CAAE,cAAc,CACrB,MAAM,CAAE,cAAc,CACtB,IAAI,CAAE,cAAc,CAGrB,aAAc,CACV,MAAM,CAAE,cAAc,CACtB,IAAI,CAAE,IAAI",
 "sources": ["../sass/style-forgotLogin-page.scss"],
 "names": [],
 "file": "style-forgotLogin-page.css"

@@ -1,0 +1,25 @@
+<div id="login-box">
+  <div class="box-title login-title">
+    <span> <i class="fa fa-lock"></i> Login </span>
+  </div>
+  <div id="form-login">
+    <form id="login-user">
+      <div id="form-placement">
+        <div>
+          <label><i class="fa fa-user"></i></label>
+          <input type="text" placeholder="Usuário" name="user-login-name" />
+        </div>
+        <div>
+          <label><i class="fa fa-unlock"></i></label>
+          <input type="password" placeholder="Senha" name="user-login-pass" />
+        </div>
+      </div>
+      <ul id="user-options">
+        <li> <a href="#/forgot-pass">Esqueci a senha</a> </li>
+        <li>|</li>
+        <li> <a href="#/sigin">Não tenho cadastro</a> </li>
+      </ul>
+      <buttom id="login-button" ng-click="login()" class="btn btn-submit"> Login </buttom>
+    </form>
+  </div>
+</div>
