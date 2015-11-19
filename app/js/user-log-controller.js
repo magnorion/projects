@@ -1,6 +1,6 @@
 "use strict";
 var app = angular.module("fakeLog",['ngRoute','door3.css']);
-app.config(function($routeProvider){
+app.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
   $routeProvider.
   when('/',{
     controller: 'login-page',
@@ -15,8 +15,13 @@ app.config(function($routeProvider){
     controller: 'forgotPass-page',
     templateUrl: 'partials/forgot-pass.html',
     css:['css/style-forgotLogin-page.css']
-  })
-});
+  });
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
+}]);
+
 app.controller('login-page',function($scope,$routeParams){
   $scope.login = function(){
     window.location.assign('play/');
