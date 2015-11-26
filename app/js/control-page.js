@@ -1,3 +1,4 @@
+"use strict";
 var app = angular.module('fake',['ngRoute','door3.css','ngAnimate']);
 // ********************* Directives ***************************
 // Carousel Directive ---
@@ -14,7 +15,7 @@ app.directive('carousel',function($http,$timeout){
 // ************************************************************
 
 // Routes *****************************************************
-app.config(function($routeProvider){
+app.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
   $routeProvider
   .when('/',{
     templateUrl:'partials/dashboard.html',
@@ -56,8 +57,15 @@ app.config(function($routeProvider){
     templateUrl:'partials/new-post.html',
     controller:'postController',
     css:['../css/style-userProfile-page.css','../css/style-stage-page.css','../css/style-stageEvent-page.css']
-  })
-});
+  });
+
+  $locationProvider.html5Mode({
+    enabled:false,
+    requireBase:false
+  });
+
+}]);
+
 // ************************************************************
 
 // ******************* Controllers *******************************

@@ -17,7 +17,7 @@ app.config(['$routeProvider','$locationProvider',function($routeProvider,$locati
     css:['css/style-forgotLogin-page.css']
   });
   $locationProvider.html5Mode({
-    enabled: true,
+    enabled: false,
     requireBase: false
   });
 }]);
