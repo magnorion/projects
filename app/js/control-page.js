@@ -112,11 +112,11 @@ app.controller('postController',function($scope,$routeParams,$rootScope){
   var btn = preview.btn;
   function preview_post(){
     var text_post_lower = document.querySelector('#post-input').value.toLowerCase();
-    var black_list_tags = ['style','applet', 'body', 'bgsound', 'base', 'basefont', 'embed', 'frame', 'frameset', 'head', 'html', 'id', 'ilayer', 'layer', 'link', 'meta', 'name', 'object', 'script', 'title', 'xml', 'action', 'background', 'codebase', 'dynsrc', 'lowsrc','href'];
+    var black_list_tags = ['iframe','style','applet', 'body', 'bgsound', 'base', 'basefont', 'embed', 'frame', 'frameset', 'head', 'html', 'id', 'ilayer', 'layer', 'link', 'meta', 'name', 'object', 'script', 'title', 'xml', 'action', 'background', 'codebase', 'dynsrc', 'lowsrc','href'];
     var counter = 0;
     var text_post;
     while(counter < black_list_tags.length){
-      text_post = text_post_lower.replace("<"+black_list_tags[counter]+">","");
+      text_post = text_post_lower.replace("<"+black_list_tags[counter],"");
       if(text_post != text_post_lower){
         $("#modalTrigger").trigger("click");
         return false;

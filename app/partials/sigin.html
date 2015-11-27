@@ -4,31 +4,31 @@
     <span> <i class="fa fa-sign-in"></i> Cadastro </span>
   </div>
   <div id="form-login">
-    <form id="login-user">
+    <form id="login-user" name="user-login">
       <div id="form-placement">
         <div>
           <label><i class="fa fa-user"></i></label>
-          <input type="text" placeholder="Nome completo" name="user-login-name" />
+          <input type="text" ng-model="name" placeholder="Nome completo" name="user-login-name" />
         </div>
         <div>
           <label><i class="fa fa-at"></i></label>
-          <input type="text" placeholder="Email" name="user-login-name" />
+          <input type="text" ng-model="email" placeholder="Email" name="user-login-email" />
         </div>
         <div>
           <label><i class="fa fa-key"></i></label>
-          <input type="password" placeholder="Senha" name="user-login-name" />
+          <input type="password" ng-model="password" placeholder="Senha" name="user-login-password" />
         </div>
         <div>
           <label><i class="fa fa-check"></i></label>
-          <input type="password" placeholder="Confirmar Senha" name="user-login-name" />
+          <input type="password" ng-model="password_confirm" placeholder="Confirmar Senha" name="user-login-passConfirm" />
         </div>
       </div>
       <ul id="user-options">
-        <li> <a href="/">Login</a> </li>
+        <li> <a href="#/">Login</a> </li>
         <li>|</li>
-        <li> <a href="/forgot-pass">Esqueci minha senha</a> </li>
+        <li> <a href="#/forgot-pass">Esqueci minha senha</a> </li>
       </ul>
-      <buttom class="btn btn-submit"> Enviar </buttom>
+      <buttom ng-click="send_data(user-login)" class="btn btn-submit"> Enviar </buttom>
     </form>
   </div>
 </div>

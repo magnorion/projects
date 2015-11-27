@@ -29,6 +29,7 @@ module.exports = function(grunt){
 		watch:{
 			options:{
 				livereload: 8080,
+				nospawn: true
 			},
 			js:{
 				files:['app/js/**/*.js','app/js/*.js'],
