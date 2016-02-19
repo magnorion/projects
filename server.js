@@ -70,4 +70,4 @@ app.route('/login-user').get(function(req,res){
 });
 // ***
 
-app.listen(3000); // "Starta" o servidor
+app.listen(80); // "Starta" o servidor
