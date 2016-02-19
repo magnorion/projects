@@ -70,4 +70,4 @@ app.route('/login-user').get(function(req,res){
 });
 // ***
 
-app.listen(80); // "Starta" o servidor
+app.listen(process.env.PORT); // "Starta" o servidor
